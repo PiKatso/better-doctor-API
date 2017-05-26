@@ -1,6 +1,8 @@
 # Find a Doctor
 
-This project will save the world!
+This project will allow the user to enter a symptom or medical issue and receive info for nearby doctors.
+
+![](https://github.com/PiKatso/better-doctor-API/blob/master/img/Screen%20Shot%202017-05-26%20at%203.48.07%20PM.png)
 
 ### Prerequisites
 
@@ -23,6 +25,7 @@ Once you have navigated to the correct directory, you will run the following com
 * npm init
 * bower install
 * npm install
+* gulp build
 * gulp serve
 
 The required packages may take a few minutes to download and install due to the speed of your machine and your Internet connection. The last command should launch the app in your browser! That's it!
@@ -36,7 +39,7 @@ The required packages may take a few minutes to download and install due to the 
 * Jquery https://jquery.com/
 * Node
 * Bower
-* BetterDoctorAPI
+* BetterDoctorAPI https://developer.betterdoctor.com/
 
 ## Authors
 
