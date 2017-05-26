@@ -1,0 +1,23 @@
+$lightblue : #d6f3fc;
+
+#selector-bar {
+
+}
+
+#doctor-bar{
+  display: block;
+  // padding: 80px;
+  hr {
+    display: block;
+   height: 1px;
+   width: 90%;
+   border: 0;
+   border-top: 3px solid $lightblue;
+   margin: 1em 0;
+   padding: 0;
+  }
+  img {
+    border-radius: 7px;
+    // float: right;
+  }
+}

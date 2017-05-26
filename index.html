@@ -11,19 +11,24 @@
     <!-- <script src="https://api.betterdoctor.com/2016-03-01/doctors?"></script> -->
     <title>Doctor Finder</title>
   </head>
-
   <body>
-    <!-- Input Form -->
-    <div class="container">
-      <h3>Have symptoms?</h3>
-      <h1>Find a Doctor</h1>
-      <form class="find-doctor">
-        <input type="text" name="symptom" id="symptom" placeholder="Enter you symptom">
-        <button type="submit" class='btn btn-info' id="find-symptoms" name="button">Submit</button>
-      </form>
+    <div class="row">
+      <!-- Input Form -->
+      <div class="col-md-3" id="selector-bar">
+        <div class="container">
+          <h3>Have symptoms?</h3>
+          <h1>Find a Doctor</h1>
+          <form class="find-doctor">
+            <input type="text" name="symptom" id="symptom" placeholder="Enter you symptom">
+            <button type="submit" class='btn btn-info' id="find-symptoms" name="button">Submit</button>
+          </form>
+        </div>
+      </div>
+      <!-- Output -->
+      <div class="col-md-9" id="doctor-bar">
+        <div class="showDoctors" id="showDoctors"></div>
+      </div>
     </div>
-    <!-- Output -->
-    <div class="showDoctors" id="showDoctors"></div>
   </body>
 
 </html>
