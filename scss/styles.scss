@@ -6,13 +6,16 @@ $lightblue : #d6f3fc;
 
 #doctor-bar{
   display: block;
+  h5{
+    font-weight: bold;
+  }
   // padding: 80px;
   hr {
     display: block;
    height: 1px;
    width: 90%;
    border: 0;
-   border-top: 3px solid $lightblue;
+   border-top: 2px solid $lightblue;
    margin: 1em 0;
    padding: 0;
   }
