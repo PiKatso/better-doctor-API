@@ -1,9 +1,17 @@
 var Doctor = require('./../js/betterdoctor.js').doctorModule;
 
+var displayDoctor = function(medicalIssue, doctors) {
+  console.log(doctors);
+  $('.showDoctors').append(doctors);
+};
+
 $(document).ready(function(){
-  var currentMedicalIssue = new Doctor();
-  $('#find-symptoms').click(function(){
+  var needDoctor = new Doctor();
+
+  $('#find-symptoms').click(function(e){
+    e.preventDefault();
     var medicalIssue = $('#symptom').val();
-    currentMedicalIssue.getDoctor(medicalIssue);
+    needDoctor.getDoctors(medicalIssue, displayDoctor);
   });
+
 });
