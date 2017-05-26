@@ -5,6 +5,7 @@ $(document).ready(function(){
 
   $('#find-symptoms').click(function(e){
     e.preventDefault();
+    $('.showDoctors').empty();
     var medicalIssue = $('#symptom').val();
     needDoctor.getDoctors(medicalIssue);
   });

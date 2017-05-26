@@ -10,8 +10,10 @@ Doctor.prototype.getDoctors = function(medicalIssue) {
      (result.data.forEach(function(data){
       var docName = data.profile.first_name + " " + data.profile.last_name;
       var docSpeacialties = data.specialties[0].actor + ", " + data.specialties[0].description;
+      var docDegree = data.educations.school;
+      var docPic = data.profile.image_url;
 
-     $('.showDoctors').append("<h5>Dr. " + docName + "</h5><p>" + docSpeacialties + "</p><br>");
+     $('.showDoctors').append("<div class='doctor'<h5>Dr. " + docName + "</h5><p>" + docSpeacialties + "</p><img src='" + docPic + "'></div><hr>");
     }));
    })
 
