@@ -1,4 +1,4 @@
-# <!--PROJECT NAME HERE-->
+# Find a Doctor
 
 This project will save the world!
 
@@ -19,6 +19,8 @@ There are a few terminal commands you will need to run to get the app to launch 
 
 Once you have navigated to the correct directory, you will run the following commands:
 
+* bower init
+* npm init
 * bower install
 * npm install
 * gulp serve
@@ -34,16 +36,17 @@ The required packages may take a few minutes to download and install due to the 
 * Jquery https://jquery.com/
 * Node
 * Bower
+* BetterDoctorAPI
 
 ## Authors
 
-* <!--YOUR NAME HERE-->
+* Kat Gifford
 
 ## License
 
 MIT License
 
-Copyright (c) <!--YOUR NAME & YEAR HERE-->
+Copyright (c) Kat Gifford 2017
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
