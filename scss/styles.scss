@@ -1,15 +1,11 @@
 $lightblue : #d6f3fc;
 
-#selector-bar {
-
-}
-
 #doctor-bar{
   display: block;
-  h5{
-    font-weight: bold;
-  }
-  // padding: 80px;
+  padding: 30px;
+  // #bold {
+  //   font-weight: bold;
+  // }
   hr {
     display: block;
    height: 1px;
@@ -21,6 +17,5 @@ $lightblue : #d6f3fc;
   }
   img {
     border-radius: 7px;
-    // float: right;
   }
 }

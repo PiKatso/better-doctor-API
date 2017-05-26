@@ -1,4 +1,5 @@
 var apiKey = require('./../.env').apiKey;
+var weaKey = require('./../.env').weaKey;
 
 function Doctor(medicalIssue){
   this.medicalIssue = medicalIssue;
@@ -9,11 +10,12 @@ Doctor.prototype.getDoctors = function(medicalIssue) {
    .then(function(result) {
      (result.data.forEach(function(data){
       var docName = data.profile.first_name + " " + data.profile.last_name;
-      var docSpeacialties = data.specialties[0].actor + ", " + data.specialties[0].description;
+      var docSpeacialties = data.specialties[0].actor + ", " + data.profile.title + "<br>" + data.specialties[0].description;
       var docDegree = data.educations.school;
       var docPic = data.profile.image_url;
+      var docInfo = data.practices[0].name + "<br>" + data.practices[0].visit_address.street + ", " + data.practices[0].visit_address.zip;
 
-     $('.showDoctors').append("<div class='doctor'<h5>Dr. " + docName + "</h5><p>" + docSpeacialties + "</p><img src='" + docPic + "'></div><hr>");
+     $('.showDoctors').append("Dr. " + docName + "</span><p>" + docSpeacialties + "</p><img src='" + docPic + "'><br>" + docInfo + "<hr>");
     }));
    })
 
